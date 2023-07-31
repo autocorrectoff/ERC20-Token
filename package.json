@@ -1,0 +1,23 @@
+{
+  "name": "erc20_token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://BerkCreen@dev.azure.com/BerkCreen/ERC20%20Token/_git/ERC20%20Token"
+  },
+  "keywords": [
+    "ERC20",
+    "Smart Contracts",
+    "Solidity"
+  ],
+  "author": "branko.miric@creen.io",
+  "license": "ISC",
+  "devDependencies": {
+    "hardhat": "^2.17.0"
+  }
+}
