@@ -1,6 +1,14 @@
 require('@nomicfoundation/hardhat-toolbox');
+require("dotenv").config();
 
-const privateKey = '0x70a7e3ac2da728f5001df87c0cec7b07ebe44dcc3de2e08c1cf5d38a053e4f8c';
+const privateKey = process.env.PRIVATE_KEY;
+if (!privateKey) {
+  console.error(
+    "\x1b[31m",
+    "Whooops! We can't do this without a private key. Did you remember to place your private key in the .env file?"
+  );
+  process.exit(1);
+}
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
