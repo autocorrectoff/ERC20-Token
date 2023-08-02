@@ -20,11 +20,16 @@ module.exports = {
     hardhat: {
       chainId: 1337,
     },
-    rinkeby: {
-      url: 'https://speedy-nodes-nyc.moralis.io/68be5cfb5f3e5bf20da7d6b0/eth/rinkeby',
+    mumbai: {
+      url: 'https://polygon-mumbai.infura.io/v3/c9657d3c5621495c9f6b60c3913df958',
       accounts: [privateKey],
     },
-    //   mumbai: {},
-    //   polygon: {}
+    polygon: {
+      url: 'https://polygon-mainnet.infura.io/v3/c9657d3c5621495c9f6b60c3913df958',
+      accounts: [privateKey],
+    },
+  },
+  etherscan: {
+    apiKey: process.env.POLYGONSCAN_API_KEY,
   },
 };
